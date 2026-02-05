@@ -1015,7 +1015,7 @@ gdjs.Cena_9502Code.GDbtn_9595audioObjects1.length = k;
 if (isConditionTrue_0) {
 {gdjs.evtTools.sound.fadeSoundVolume(runtimeScene, 2, 0, 0.1);
 }{gdjs.evtTools.sound.stopSoundOnChannel(runtimeScene, 3);
-}{gdjs.evtTools.sound.playSoundOnChannel(runtimeScene, "assets\\audios\\fase_01\\certo.mp3", 3, false, 100, 1);
+}{gdjs.evtTools.sound.playSoundOnChannel(runtimeScene, "assets\\audios\\fase_02\\numero.mp3", 3, false, 100, 1);
 }}
 
 }
