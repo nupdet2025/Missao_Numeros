@@ -22,7 +22,7 @@ gdjs.Mapa_9505Code.GDAcerto_959504Objects1= [];
 gdjs.Mapa_9505Code.GDAcerto_959504Objects2= [];
 
 
-gdjs.Mapa_9505Code.asyncCallback14265236 = function (runtimeScene, asyncObjectsList) {
+gdjs.Mapa_9505Code.asyncCallback22159404 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.Mapa_9505Code.localVariables);
 gdjs.copyArray(asyncObjectsList.getObjects("Player"), gdjs.Mapa_9505Code.GDPlayerObjects2);
 
@@ -45,14 +45,14 @@ gdjs.Mapa_9505Code.eventsList0 = function(runtimeScene) {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 asyncObjectsList.backupLocalVariablesContainers(gdjs.Mapa_9505Code.localVariables);
 for (const obj of gdjs.Mapa_9505Code.GDPlayerObjects1) asyncObjectsList.addObject("Player", obj);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), (runtimeScene) => (gdjs.Mapa_9505Code.asyncCallback14265236(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), (runtimeScene) => (gdjs.Mapa_9505Code.asyncCallback22159404(runtimeScene, asyncObjectsList)));
 }
 }
 
 }
 
 
-};gdjs.Mapa_9505Code.asyncCallback14267396 = function (runtimeScene, asyncObjectsList) {
+};gdjs.Mapa_9505Code.asyncCallback22161644 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.Mapa_9505Code.localVariables);
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Cena_06", false);
 }gdjs.Mapa_9505Code.localVariables.length = 0;
@@ -66,7 +66,7 @@ gdjs.Mapa_9505Code.eventsList1 = function(runtimeScene) {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 asyncObjectsList.backupLocalVariablesContainers(gdjs.Mapa_9505Code.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.5), (runtimeScene) => (gdjs.Mapa_9505Code.asyncCallback14267396(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.5), (runtimeScene) => (gdjs.Mapa_9505Code.asyncCallback22161644(runtimeScene, asyncObjectsList)));
 }
 }
 
