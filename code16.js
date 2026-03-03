@@ -1,51 +1,76 @@
-gdjs.FinalCode = {};
-gdjs.FinalCode.localVariables = [];
-gdjs.FinalCode.GDbackgroundObjects1= [];
-gdjs.FinalCode.GDbackgroundObjects2= [];
-gdjs.FinalCode.GDpainel_959501Objects1= [];
-gdjs.FinalCode.GDpainel_959501Objects2= [];
-gdjs.FinalCode.GDText_9595InstrucaoObjects1= [];
-gdjs.FinalCode.GDText_9595InstrucaoObjects2= [];
-gdjs.FinalCode.GDbtn_9595comecarObjects1= [];
-gdjs.FinalCode.GDbtn_9595comecarObjects2= [];
-gdjs.FinalCode.GDbtn_9595certoObjects1= [];
-gdjs.FinalCode.GDbtn_9595certoObjects2= [];
-gdjs.FinalCode.GDbtn_9595errado_959501Objects1= [];
-gdjs.FinalCode.GDbtn_9595errado_959501Objects2= [];
-gdjs.FinalCode.GDbtn_9595errado_959502Objects1= [];
-gdjs.FinalCode.GDbtn_9595errado_959502Objects2= [];
-gdjs.FinalCode.GDbtn_9595nextObjects1= [];
-gdjs.FinalCode.GDbtn_9595nextObjects2= [];
-gdjs.FinalCode.GDbtn_9595reiniciarObjects1= [];
-gdjs.FinalCode.GDbtn_9595reiniciarObjects2= [];
-gdjs.FinalCode.GDFireworksObjects1= [];
-gdjs.FinalCode.GDFireworksObjects2= [];
-gdjs.FinalCode.GDFireworks2Objects1= [];
-gdjs.FinalCode.GDFireworks2Objects2= [];
-gdjs.FinalCode.GDFireworks3Objects1= [];
-gdjs.FinalCode.GDFireworks3Objects2= [];
-gdjs.FinalCode.GDFireworks4Objects1= [];
-gdjs.FinalCode.GDFireworks4Objects2= [];
-gdjs.FinalCode.GDPlayerObjects1= [];
-gdjs.FinalCode.GDPlayerObjects2= [];
-gdjs.FinalCode.GDAcerto_959501Objects1= [];
-gdjs.FinalCode.GDAcerto_959501Objects2= [];
-gdjs.FinalCode.GDCursorObjects1= [];
-gdjs.FinalCode.GDCursorObjects2= [];
-gdjs.FinalCode.GDAcerto_959502Objects1= [];
-gdjs.FinalCode.GDAcerto_959502Objects2= [];
-gdjs.FinalCode.GDAcerto_959503Objects1= [];
-gdjs.FinalCode.GDAcerto_959503Objects2= [];
-gdjs.FinalCode.GDAcerto_959504Objects1= [];
-gdjs.FinalCode.GDAcerto_959504Objects2= [];
+gdjs.Mapa_9507Code = {};
+gdjs.Mapa_9507Code.localVariables = [];
+gdjs.Mapa_9507Code.GDbackgroundObjects1= [];
+gdjs.Mapa_9507Code.GDbackgroundObjects2= [];
+gdjs.Mapa_9507Code.GDbackgroundObjects3= [];
+gdjs.Mapa_9507Code.GDbtn_9595nextObjects1= [];
+gdjs.Mapa_9507Code.GDbtn_9595nextObjects2= [];
+gdjs.Mapa_9507Code.GDbtn_9595nextObjects3= [];
+gdjs.Mapa_9507Code.GDNewSpriteObjects1= [];
+gdjs.Mapa_9507Code.GDNewSpriteObjects2= [];
+gdjs.Mapa_9507Code.GDNewSpriteObjects3= [];
+gdjs.Mapa_9507Code.GDPlayerObjects1= [];
+gdjs.Mapa_9507Code.GDPlayerObjects2= [];
+gdjs.Mapa_9507Code.GDPlayerObjects3= [];
+gdjs.Mapa_9507Code.GDspotObjects1= [];
+gdjs.Mapa_9507Code.GDspotObjects2= [];
+gdjs.Mapa_9507Code.GDspotObjects3= [];
+gdjs.Mapa_9507Code.GDAcerto_959501Objects1= [];
+gdjs.Mapa_9507Code.GDAcerto_959501Objects2= [];
+gdjs.Mapa_9507Code.GDAcerto_959501Objects3= [];
+gdjs.Mapa_9507Code.GDCursorObjects1= [];
+gdjs.Mapa_9507Code.GDCursorObjects2= [];
+gdjs.Mapa_9507Code.GDCursorObjects3= [];
+gdjs.Mapa_9507Code.GDAcerto_959502Objects1= [];
+gdjs.Mapa_9507Code.GDAcerto_959502Objects2= [];
+gdjs.Mapa_9507Code.GDAcerto_959502Objects3= [];
+gdjs.Mapa_9507Code.GDAcerto_959503Objects1= [];
+gdjs.Mapa_9507Code.GDAcerto_959503Objects2= [];
+gdjs.Mapa_9507Code.GDAcerto_959503Objects3= [];
+gdjs.Mapa_9507Code.GDAcerto_959504Objects1= [];
+gdjs.Mapa_9507Code.GDAcerto_959504Objects2= [];
+gdjs.Mapa_9507Code.GDAcerto_959504Objects3= [];
 
 
-gdjs.FinalCode.asyncCallback22934436 = function (runtimeScene, asyncObjectsList) {
-asyncObjectsList.restoreLocalVariablesContainers(gdjs.FinalCode.localVariables);
-{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Intro1", false);
-}gdjs.FinalCode.localVariables.length = 0;
+gdjs.Mapa_9507Code.asyncCallback23860420 = function (runtimeScene, asyncObjectsList) {
+asyncObjectsList.restoreLocalVariablesContainers(gdjs.Mapa_9507Code.localVariables);
+{gdjs.evtTools.sound.playSoundOnChannel(runtimeScene, "assets\\sucess.mp3", 3, false, 100, 1);
+}gdjs.Mapa_9507Code.localVariables.length = 0;
 }
-gdjs.FinalCode.eventsList0 = function(runtimeScene) {
+gdjs.Mapa_9507Code.eventsList0 = function(runtimeScene, asyncObjectsList) {
+
+{
+
+
+{
+const parentAsyncObjectsList = asyncObjectsList;
+{
+const asyncObjectsList = gdjs.LongLivedObjectsList.from(parentAsyncObjectsList);
+asyncObjectsList.backupLocalVariablesContainers(gdjs.Mapa_9507Code.localVariables);
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(2), (runtimeScene) => (gdjs.Mapa_9507Code.asyncCallback23860420(runtimeScene, asyncObjectsList)));
+}
+}
+
+}
+
+
+};gdjs.Mapa_9507Code.asyncCallback23859612 = function (runtimeScene, asyncObjectsList) {
+asyncObjectsList.restoreLocalVariablesContainers(gdjs.Mapa_9507Code.localVariables);
+gdjs.copyArray(asyncObjectsList.getObjects("Player"), gdjs.Mapa_9507Code.GDPlayerObjects2);
+
+gdjs.copyArray(runtimeScene.getObjects("spot"), gdjs.Mapa_9507Code.GDspotObjects2);
+{for(var i = 0, len = gdjs.Mapa_9507Code.GDPlayerObjects2.length ;i < len;++i) {
+    gdjs.Mapa_9507Code.GDPlayerObjects2[i].getBehavior("Animation").setAnimationName("run");
+}
+}{for(var i = 0, len = gdjs.Mapa_9507Code.GDPlayerObjects2.length ;i < len;++i) {
+    gdjs.Mapa_9507Code.GDPlayerObjects2[i].getBehavior("Tween").addObjectPositionTween2("caminhar", (( gdjs.Mapa_9507Code.GDspotObjects2.length === 0 ) ? 0 :gdjs.Mapa_9507Code.GDspotObjects2[0].getPointX("")), (( gdjs.Mapa_9507Code.GDspotObjects2.length === 0 ) ? 0 :gdjs.Mapa_9507Code.GDspotObjects2[0].getPointY("")), "linear", 3, false);
+}
+}
+{ //Subevents
+gdjs.Mapa_9507Code.eventsList0(runtimeScene, asyncObjectsList);} //End of subevents
+gdjs.Mapa_9507Code.localVariables.length = 0;
+}
+gdjs.Mapa_9507Code.eventsList1 = function(runtimeScene) {
 
 {
 
@@ -53,24 +78,48 @@ gdjs.FinalCode.eventsList0 = function(runtimeScene) {
 {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
-asyncObjectsList.backupLocalVariablesContainers(gdjs.FinalCode.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(2), (runtimeScene) => (gdjs.FinalCode.asyncCallback22934436(runtimeScene, asyncObjectsList)));
+asyncObjectsList.backupLocalVariablesContainers(gdjs.Mapa_9507Code.localVariables);
+for (const obj of gdjs.Mapa_9507Code.GDPlayerObjects1) asyncObjectsList.addObject("Player", obj);
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), (runtimeScene) => (gdjs.Mapa_9507Code.asyncCallback23859612(runtimeScene, asyncObjectsList)));
 }
 }
 
 }
 
 
-};gdjs.FinalCode.eventsList1 = function(runtimeScene) {
+};gdjs.Mapa_9507Code.asyncCallback23861324 = function (runtimeScene, asyncObjectsList) {
+asyncObjectsList.restoreLocalVariablesContainers(gdjs.Mapa_9507Code.localVariables);
+{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Final", false);
+}gdjs.Mapa_9507Code.localVariables.length = 0;
+}
+gdjs.Mapa_9507Code.eventsList2 = function(runtimeScene) {
+
+{
+
+
+{
+{
+const asyncObjectsList = new gdjs.LongLivedObjectsList();
+asyncObjectsList.backupLocalVariablesContainers(gdjs.Mapa_9507Code.localVariables);
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.5), (runtimeScene) => (gdjs.Mapa_9507Code.asyncCallback23861324(runtimeScene, asyncObjectsList)));
+}
+}
+
+}
+
+
+};gdjs.Mapa_9507Code.mapOfGDgdjs_9546Mapa_95959507Code_9546GDPlayerObjects1Objects = Hashtable.newFrom({"Player": gdjs.Mapa_9507Code.GDPlayerObjects1});
+gdjs.Mapa_9507Code.mapOfGDgdjs_9546Mapa_95959507Code_9546GDspotObjects1Objects = Hashtable.newFrom({"spot": gdjs.Mapa_9507Code.GDspotObjects1});
+gdjs.Mapa_9507Code.eventsList3 = function(runtimeScene) {
 
 {
 
 
 let isConditionTrue_0 = false;
 {
-gdjs.copyArray(runtimeScene.getObjects("Cursor"), gdjs.FinalCode.GDCursorObjects1);
-{for(var i = 0, len = gdjs.FinalCode.GDCursorObjects1.length ;i < len;++i) {
-    gdjs.FinalCode.GDCursorObjects1[i].hide();
+gdjs.copyArray(runtimeScene.getObjects("Cursor"), gdjs.Mapa_9507Code.GDCursorObjects1);
+{for(var i = 0, len = gdjs.Mapa_9507Code.GDCursorObjects1.length ;i < len;++i) {
+    gdjs.Mapa_9507Code.GDCursorObjects1[i].hide();
 }
 }}
 
@@ -84,13 +133,13 @@ let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 isConditionTrue_0 = !(gdjs.evtTools.systemInfo.isMobile());
 if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("Cursor"), gdjs.FinalCode.GDCursorObjects1);
-{for(var i = 0, len = gdjs.FinalCode.GDCursorObjects1.length ;i < len;++i) {
-    gdjs.FinalCode.GDCursorObjects1[i].setPosition(gdjs.evtTools.input.getCursorX(runtimeScene, "", 0),gdjs.evtTools.input.getCursorY(runtimeScene, "", 0));
+gdjs.copyArray(runtimeScene.getObjects("Cursor"), gdjs.Mapa_9507Code.GDCursorObjects1);
+{for(var i = 0, len = gdjs.Mapa_9507Code.GDCursorObjects1.length ;i < len;++i) {
+    gdjs.Mapa_9507Code.GDCursorObjects1[i].setPosition(gdjs.evtTools.input.getCursorX(runtimeScene, "", 0),gdjs.evtTools.input.getCursorY(runtimeScene, "", 0));
 }
 }{gdjs.evtTools.input.hideCursor(runtimeScene);
-}{for(var i = 0, len = gdjs.FinalCode.GDCursorObjects1.length ;i < len;++i) {
-    gdjs.FinalCode.GDCursorObjects1[i].hide(false);
+}{for(var i = 0, len = gdjs.Mapa_9507Code.GDCursorObjects1.length ;i < len;++i) {
+    gdjs.Mapa_9507Code.GDCursorObjects1[i].hide(false);
 }
 }}
 
@@ -104,45 +153,13 @@ let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
 if (isConditionTrue_0) {
-{gdjs.evtTools.sound.playSoundOnChannel(runtimeScene, "assets\\victory.mp3", 2, true, 20, 1);
-}{gdjs.evtTools.sound.playSoundOnChannel(runtimeScene, "assets\\audios\\audio_final.mp3", 3, false, 100, 1);
-}}
-
+gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.Mapa_9507Code.GDPlayerObjects1);
+{for(var i = 0, len = gdjs.Mapa_9507Code.GDPlayerObjects1.length ;i < len;++i) {
+    gdjs.Mapa_9507Code.GDPlayerObjects1[i].getBehavior("Animation").setAnimationName("stop");
 }
-
-
-{
-
-gdjs.copyArray(runtimeScene.getObjects("btn_reiniciar"), gdjs.FinalCode.GDbtn_9595reiniciarObjects1);
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.FinalCode.GDbtn_9595reiniciarObjects1.length;i<l;++i) {
-    if ( gdjs.FinalCode.GDbtn_9595reiniciarObjects1[i].IsClicked((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
-        isConditionTrue_0 = true;
-        gdjs.FinalCode.GDbtn_9595reiniciarObjects1[k] = gdjs.FinalCode.GDbtn_9595reiniciarObjects1[i];
-        ++k;
-    }
-}
-gdjs.FinalCode.GDbtn_9595reiniciarObjects1.length = k;
-if (isConditionTrue_0) {
-isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.FinalCode.GDbtn_9595reiniciarObjects1.length;i<l;++i) {
-    if ( gdjs.FinalCode.GDbtn_9595reiniciarObjects1[i].IsClicked((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
-        isConditionTrue_0 = true;
-        gdjs.FinalCode.GDbtn_9595reiniciarObjects1[k] = gdjs.FinalCode.GDbtn_9595reiniciarObjects1[i];
-        ++k;
-    }
-}
-gdjs.FinalCode.GDbtn_9595reiniciarObjects1.length = k;
-}
-if (isConditionTrue_0) {
-{gdjs.evtTools.sound.playSound(runtimeScene, "assets\\btn_press.mp3", false, 100, 1);
-}{gdjs.evtTools.sound.fadeSoundVolume(runtimeScene, 2, 0, 2);
-}{gdjs.evtTools.sound.fadeSoundVolume(runtimeScene, 3, 0, 0.5);
 }
 { //Subevents
-gdjs.FinalCode.eventsList0(runtimeScene);} //End of subevents
+gdjs.Mapa_9507Code.eventsList1(runtimeScene);} //End of subevents
 }
 
 }
@@ -150,101 +167,117 @@ gdjs.FinalCode.eventsList0(runtimeScene);} //End of subevents
 
 {
 
+gdjs.copyArray(runtimeScene.getObjects("btn_next"), gdjs.Mapa_9507Code.GDbtn_9595nextObjects1);
 
 let isConditionTrue_0 = false;
-{
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.Mapa_9507Code.GDbtn_9595nextObjects1.length;i<l;++i) {
+    if ( gdjs.Mapa_9507Code.GDbtn_9595nextObjects1[i].IsClicked((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
+        isConditionTrue_0 = true;
+        gdjs.Mapa_9507Code.GDbtn_9595nextObjects1[k] = gdjs.Mapa_9507Code.GDbtn_9595nextObjects1[i];
+        ++k;
+    }
 }
+gdjs.Mapa_9507Code.GDbtn_9595nextObjects1.length = k;
+if (isConditionTrue_0) {
+{gdjs.evtTools.sound.playSound(runtimeScene, "assets\\btn_press.mp3", false, 40, 1);
+}
+{ //Subevents
+gdjs.Mapa_9507Code.eventsList2(runtimeScene);} //End of subevents
+}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.Mapa_9507Code.GDPlayerObjects1);
+gdjs.copyArray(runtimeScene.getObjects("spot"), gdjs.Mapa_9507Code.GDspotObjects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.object.distanceTest(gdjs.Mapa_9507Code.mapOfGDgdjs_9546Mapa_95959507Code_9546GDPlayerObjects1Objects, gdjs.Mapa_9507Code.mapOfGDgdjs_9546Mapa_95959507Code_9546GDspotObjects1Objects, 2, false);
+if (isConditionTrue_0) {
+/* Reuse gdjs.Mapa_9507Code.GDPlayerObjects1 */
+{for(var i = 0, len = gdjs.Mapa_9507Code.GDPlayerObjects1.length ;i < len;++i) {
+    gdjs.Mapa_9507Code.GDPlayerObjects1[i].getBehavior("Animation").setAnimationName("stop");
+}
+}}
 
 }
 
 
 };
 
-gdjs.FinalCode.func = function(runtimeScene) {
+gdjs.Mapa_9507Code.func = function(runtimeScene) {
 runtimeScene.getOnceTriggers().startNewFrame();
 
-gdjs.FinalCode.GDbackgroundObjects1.length = 0;
-gdjs.FinalCode.GDbackgroundObjects2.length = 0;
-gdjs.FinalCode.GDpainel_959501Objects1.length = 0;
-gdjs.FinalCode.GDpainel_959501Objects2.length = 0;
-gdjs.FinalCode.GDText_9595InstrucaoObjects1.length = 0;
-gdjs.FinalCode.GDText_9595InstrucaoObjects2.length = 0;
-gdjs.FinalCode.GDbtn_9595comecarObjects1.length = 0;
-gdjs.FinalCode.GDbtn_9595comecarObjects2.length = 0;
-gdjs.FinalCode.GDbtn_9595certoObjects1.length = 0;
-gdjs.FinalCode.GDbtn_9595certoObjects2.length = 0;
-gdjs.FinalCode.GDbtn_9595errado_959501Objects1.length = 0;
-gdjs.FinalCode.GDbtn_9595errado_959501Objects2.length = 0;
-gdjs.FinalCode.GDbtn_9595errado_959502Objects1.length = 0;
-gdjs.FinalCode.GDbtn_9595errado_959502Objects2.length = 0;
-gdjs.FinalCode.GDbtn_9595nextObjects1.length = 0;
-gdjs.FinalCode.GDbtn_9595nextObjects2.length = 0;
-gdjs.FinalCode.GDbtn_9595reiniciarObjects1.length = 0;
-gdjs.FinalCode.GDbtn_9595reiniciarObjects2.length = 0;
-gdjs.FinalCode.GDFireworksObjects1.length = 0;
-gdjs.FinalCode.GDFireworksObjects2.length = 0;
-gdjs.FinalCode.GDFireworks2Objects1.length = 0;
-gdjs.FinalCode.GDFireworks2Objects2.length = 0;
-gdjs.FinalCode.GDFireworks3Objects1.length = 0;
-gdjs.FinalCode.GDFireworks3Objects2.length = 0;
-gdjs.FinalCode.GDFireworks4Objects1.length = 0;
-gdjs.FinalCode.GDFireworks4Objects2.length = 0;
-gdjs.FinalCode.GDPlayerObjects1.length = 0;
-gdjs.FinalCode.GDPlayerObjects2.length = 0;
-gdjs.FinalCode.GDAcerto_959501Objects1.length = 0;
-gdjs.FinalCode.GDAcerto_959501Objects2.length = 0;
-gdjs.FinalCode.GDCursorObjects1.length = 0;
-gdjs.FinalCode.GDCursorObjects2.length = 0;
-gdjs.FinalCode.GDAcerto_959502Objects1.length = 0;
-gdjs.FinalCode.GDAcerto_959502Objects2.length = 0;
-gdjs.FinalCode.GDAcerto_959503Objects1.length = 0;
-gdjs.FinalCode.GDAcerto_959503Objects2.length = 0;
-gdjs.FinalCode.GDAcerto_959504Objects1.length = 0;
-gdjs.FinalCode.GDAcerto_959504Objects2.length = 0;
+gdjs.Mapa_9507Code.GDbackgroundObjects1.length = 0;
+gdjs.Mapa_9507Code.GDbackgroundObjects2.length = 0;
+gdjs.Mapa_9507Code.GDbackgroundObjects3.length = 0;
+gdjs.Mapa_9507Code.GDbtn_9595nextObjects1.length = 0;
+gdjs.Mapa_9507Code.GDbtn_9595nextObjects2.length = 0;
+gdjs.Mapa_9507Code.GDbtn_9595nextObjects3.length = 0;
+gdjs.Mapa_9507Code.GDNewSpriteObjects1.length = 0;
+gdjs.Mapa_9507Code.GDNewSpriteObjects2.length = 0;
+gdjs.Mapa_9507Code.GDNewSpriteObjects3.length = 0;
+gdjs.Mapa_9507Code.GDPlayerObjects1.length = 0;
+gdjs.Mapa_9507Code.GDPlayerObjects2.length = 0;
+gdjs.Mapa_9507Code.GDPlayerObjects3.length = 0;
+gdjs.Mapa_9507Code.GDspotObjects1.length = 0;
+gdjs.Mapa_9507Code.GDspotObjects2.length = 0;
+gdjs.Mapa_9507Code.GDspotObjects3.length = 0;
+gdjs.Mapa_9507Code.GDAcerto_959501Objects1.length = 0;
+gdjs.Mapa_9507Code.GDAcerto_959501Objects2.length = 0;
+gdjs.Mapa_9507Code.GDAcerto_959501Objects3.length = 0;
+gdjs.Mapa_9507Code.GDCursorObjects1.length = 0;
+gdjs.Mapa_9507Code.GDCursorObjects2.length = 0;
+gdjs.Mapa_9507Code.GDCursorObjects3.length = 0;
+gdjs.Mapa_9507Code.GDAcerto_959502Objects1.length = 0;
+gdjs.Mapa_9507Code.GDAcerto_959502Objects2.length = 0;
+gdjs.Mapa_9507Code.GDAcerto_959502Objects3.length = 0;
+gdjs.Mapa_9507Code.GDAcerto_959503Objects1.length = 0;
+gdjs.Mapa_9507Code.GDAcerto_959503Objects2.length = 0;
+gdjs.Mapa_9507Code.GDAcerto_959503Objects3.length = 0;
+gdjs.Mapa_9507Code.GDAcerto_959504Objects1.length = 0;
+gdjs.Mapa_9507Code.GDAcerto_959504Objects2.length = 0;
+gdjs.Mapa_9507Code.GDAcerto_959504Objects3.length = 0;
 
-gdjs.FinalCode.eventsList1(runtimeScene);
-gdjs.FinalCode.GDbackgroundObjects1.length = 0;
-gdjs.FinalCode.GDbackgroundObjects2.length = 0;
-gdjs.FinalCode.GDpainel_959501Objects1.length = 0;
-gdjs.FinalCode.GDpainel_959501Objects2.length = 0;
-gdjs.FinalCode.GDText_9595InstrucaoObjects1.length = 0;
-gdjs.FinalCode.GDText_9595InstrucaoObjects2.length = 0;
-gdjs.FinalCode.GDbtn_9595comecarObjects1.length = 0;
-gdjs.FinalCode.GDbtn_9595comecarObjects2.length = 0;
-gdjs.FinalCode.GDbtn_9595certoObjects1.length = 0;
-gdjs.FinalCode.GDbtn_9595certoObjects2.length = 0;
-gdjs.FinalCode.GDbtn_9595errado_959501Objects1.length = 0;
-gdjs.FinalCode.GDbtn_9595errado_959501Objects2.length = 0;
-gdjs.FinalCode.GDbtn_9595errado_959502Objects1.length = 0;
-gdjs.FinalCode.GDbtn_9595errado_959502Objects2.length = 0;
-gdjs.FinalCode.GDbtn_9595nextObjects1.length = 0;
-gdjs.FinalCode.GDbtn_9595nextObjects2.length = 0;
-gdjs.FinalCode.GDbtn_9595reiniciarObjects1.length = 0;
-gdjs.FinalCode.GDbtn_9595reiniciarObjects2.length = 0;
-gdjs.FinalCode.GDFireworksObjects1.length = 0;
-gdjs.FinalCode.GDFireworksObjects2.length = 0;
-gdjs.FinalCode.GDFireworks2Objects1.length = 0;
-gdjs.FinalCode.GDFireworks2Objects2.length = 0;
-gdjs.FinalCode.GDFireworks3Objects1.length = 0;
-gdjs.FinalCode.GDFireworks3Objects2.length = 0;
-gdjs.FinalCode.GDFireworks4Objects1.length = 0;
-gdjs.FinalCode.GDFireworks4Objects2.length = 0;
-gdjs.FinalCode.GDPlayerObjects1.length = 0;
-gdjs.FinalCode.GDPlayerObjects2.length = 0;
-gdjs.FinalCode.GDAcerto_959501Objects1.length = 0;
-gdjs.FinalCode.GDAcerto_959501Objects2.length = 0;
-gdjs.FinalCode.GDCursorObjects1.length = 0;
-gdjs.FinalCode.GDCursorObjects2.length = 0;
-gdjs.FinalCode.GDAcerto_959502Objects1.length = 0;
-gdjs.FinalCode.GDAcerto_959502Objects2.length = 0;
-gdjs.FinalCode.GDAcerto_959503Objects1.length = 0;
-gdjs.FinalCode.GDAcerto_959503Objects2.length = 0;
-gdjs.FinalCode.GDAcerto_959504Objects1.length = 0;
-gdjs.FinalCode.GDAcerto_959504Objects2.length = 0;
+gdjs.Mapa_9507Code.eventsList3(runtimeScene);
+gdjs.Mapa_9507Code.GDbackgroundObjects1.length = 0;
+gdjs.Mapa_9507Code.GDbackgroundObjects2.length = 0;
+gdjs.Mapa_9507Code.GDbackgroundObjects3.length = 0;
+gdjs.Mapa_9507Code.GDbtn_9595nextObjects1.length = 0;
+gdjs.Mapa_9507Code.GDbtn_9595nextObjects2.length = 0;
+gdjs.Mapa_9507Code.GDbtn_9595nextObjects3.length = 0;
+gdjs.Mapa_9507Code.GDNewSpriteObjects1.length = 0;
+gdjs.Mapa_9507Code.GDNewSpriteObjects2.length = 0;
+gdjs.Mapa_9507Code.GDNewSpriteObjects3.length = 0;
+gdjs.Mapa_9507Code.GDPlayerObjects1.length = 0;
+gdjs.Mapa_9507Code.GDPlayerObjects2.length = 0;
+gdjs.Mapa_9507Code.GDPlayerObjects3.length = 0;
+gdjs.Mapa_9507Code.GDspotObjects1.length = 0;
+gdjs.Mapa_9507Code.GDspotObjects2.length = 0;
+gdjs.Mapa_9507Code.GDspotObjects3.length = 0;
+gdjs.Mapa_9507Code.GDAcerto_959501Objects1.length = 0;
+gdjs.Mapa_9507Code.GDAcerto_959501Objects2.length = 0;
+gdjs.Mapa_9507Code.GDAcerto_959501Objects3.length = 0;
+gdjs.Mapa_9507Code.GDCursorObjects1.length = 0;
+gdjs.Mapa_9507Code.GDCursorObjects2.length = 0;
+gdjs.Mapa_9507Code.GDCursorObjects3.length = 0;
+gdjs.Mapa_9507Code.GDAcerto_959502Objects1.length = 0;
+gdjs.Mapa_9507Code.GDAcerto_959502Objects2.length = 0;
+gdjs.Mapa_9507Code.GDAcerto_959502Objects3.length = 0;
+gdjs.Mapa_9507Code.GDAcerto_959503Objects1.length = 0;
+gdjs.Mapa_9507Code.GDAcerto_959503Objects2.length = 0;
+gdjs.Mapa_9507Code.GDAcerto_959503Objects3.length = 0;
+gdjs.Mapa_9507Code.GDAcerto_959504Objects1.length = 0;
+gdjs.Mapa_9507Code.GDAcerto_959504Objects2.length = 0;
+gdjs.Mapa_9507Code.GDAcerto_959504Objects3.length = 0;
 
 
 return;
 
 }
 
-gdjs['FinalCode'] = gdjs.FinalCode;
+gdjs['Mapa_9507Code'] = gdjs.Mapa_9507Code;
